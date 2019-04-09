@@ -1,0 +1,18 @@
+.ex-code-prettify {
+	width: 760px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.demo-area {
+	padding: 50px 30px 20px 30px;
+}
+.demo-html {
+	margin: 0 !important;
+	cursor: pointer;
+}
+.demo-html:hover {
+	background-color: #3333332e;
+}
+.code-area {
+	/*display: none !important;*/
+}
