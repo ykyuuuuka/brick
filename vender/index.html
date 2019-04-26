@@ -4,25 +4,48 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Document</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+	<!-- besic resources -->
+	<link rel="stylesheet" href="/vender/resource/normalize.css">
 	<link rel="stylesheet" href="/vender/resource/jquery.ex-code-prettify.css">
 	<link rel="stylesheet" href="/vender/resource/app.css">
+
+	<!-- Material Components all-in-one CSS and JS bundles -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,900" rel="stylesheet">
 </head>
 
 <body>
 
-	<div class="ex-code-prettify demo-top">
-		<textarea class="code" data-ex-code-prettify-param="{codeType:'html'}">
-			<div class="logo">Ex Code Prettify</div>
-		</textarea>
+	<div class="m-wrapper">
 
-		<textarea class="code" data-ex-code-prettify-param="{codeType:'html'}">
-			<h1>test</h1>
-		</textarea>
-	</div>
+		<main class="m-container">
+			<div class="m-container-header">
+				<div class="m-header-logo">
+					<h1>BRICK<sb>/PROTOTYPE</sb></h1>
+				</div>
+			</div>
+			<div class="ex-code-prettify">
+				<textarea class="code" data-ex-code-prettify-param="{codeType:'html'}">
+					<div class="logo">Ex Code Prettify</div>
+				</textarea>
+
+				<textarea class="code" data-ex-code-prettify-param="{codeType:'html'}">
+					<h1>test</h1>
+				</textarea>
+			</div>
+		</main><!-- .m-container -->
+
+		<aside class="m-side-container">
+			サイドコンテンツ
+		</aside><!-- .m-side-container -->
+
+	</div><!-- .m-wrapper -->
 
 	<script src="/vender/resource/jquery.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+	<script src="/vender/resource/jquery-ui.js"></script>
 	<script src="/vender/resource/prettify.js"></script>
 	<script src="/vender/resource/jquery.ex-code-prettify.js"></script>
 	<script src="/vender/resource/behave.js"></script>
