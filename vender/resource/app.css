@@ -101,6 +101,9 @@ html, body {
 	font-weight: bold;
 	padding-bottom: 6px !important;
 }
+.js-panel-code {
+	display: none;
+}
 
 /*
 code-prettify
