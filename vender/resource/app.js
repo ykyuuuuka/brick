@@ -34,6 +34,7 @@ function encode(code) {
 	return encode_code;
 }
 
+//コードエリアをクリックした時の処理
 $(".js-panel").click(function() {
 	var target = $(this).find(".js-panel-code").html();
 	var p = "{codeType:'html'}";
@@ -42,5 +43,35 @@ $(".js-panel").click(function() {
 	var prettify_code = '<textarea class="code" data-ex-code-prettify-param="'+ p +'">'+ target +'</textarea>';
 	$('.js-prettify-wrapper').append(prettify_code);
 	exCode();
+	return false;
+});
+
+
+//exCodePrettifyAPIを使って全textareaのコードを取得
+$('#js-btn-copy').click(function() {
+	console.log('click');
+
+	var copyText = '';
+	var num = 0;
+
+	$('.ui-state-default').each(function() {
+		var api = $('textarea').eq(num).exCodePrettify({api:true});
+		var code = api.getCode();
+		copyText = copyText + code + '\r\n';
+		num++;
+	});
+
+	copyText = encode(copyText);
+
+	$('#js-copy-code').html(copyText);
+	var target = $('#js-copy-code');
+	target.select();
+	document.execCommand("copy");
+
+	$('.notice-copy').fadeIn('slow');
+	setTimeout(function(){
+		$('.notice-copy').fadeOut('slow');
+	},2000);
+
 	return false;
 });

@@ -127,3 +127,22 @@ code-prettify
 .code-area {
 	display: none !important;
 }
+
+
+/*
+original
+*/
+.notice-copy {
+	width: 100%;
+	background-color: #4285F4;
+	position: absolute;
+	top: 48%;
+	text-align: center;
+	color: #fff;
+	z-index: 9999;
+	display: none;
+}
+.notice-copy span {
+	display: block;
+	padding: 10px 0;
+}

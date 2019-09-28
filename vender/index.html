@@ -8,7 +8,7 @@
 	<!-- besic resources -->
 	<link rel="stylesheet" href="/vender/resource/normalize.css">
 	<link rel="stylesheet" href="/vender/resource/jquery.ex-code-prettify.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/vender/resource/bootstrap.css">
 	<link rel="stylesheet" href="/vender/resource/app.css">
 
 	<!-- Google Font -->
@@ -25,7 +25,7 @@
 					<h1>BRICK<sb>/PROTOTYPE</sb></h1>
 				</div>
 				<div class="m-header-btn">
-					<a class="btn btn-primary" href="#" role="button">ダウンロード</a>
+					<a class="btn btn-primary" href="#" role="button" id="js-btn-copy">コードコピー</a>
 				</div>
 			</div>
 			<div class="ex-code-prettify js-prettify-wrapper">
@@ -216,10 +216,15 @@
 					</div>
 				</a>
 			</div>
-
 		</aside><!-- .m-side-container -->
-
 	</div><!-- .m-wrapper -->
+
+
+	<!-- 以下は触れないでください -->
+	<textarea id="js-copy-code"></textarea>
+	<div class="notice-copy">
+		<span>ソースコードをクリップボードにコピーしました</span>
+	</div>
 
 	<script src="/vender/resource/jquery.min.js"></script>
 	<script src="/vender/resource/jquery-ui.js"></script>
